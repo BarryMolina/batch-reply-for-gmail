@@ -1,5 +1,5 @@
 // Define compose URL <to> will be replaces with a CSV list of e-mails
-var composeURL = 'https://mail.google.com/mail/u/<accountNumber>/?view=cm&fs=1&tf=1&source=mailto&bcc=<to>';
+var composeURL = 'https://mail.google.com/mail/u/<accountNumber>/?view=cm&fs=1&tf=1&source=mailto&bcc=<to>&cc=<copyto>';
 
 // Batch reply button
 function getBatchReplyButton() {
@@ -113,6 +113,9 @@ function prepareBatchReply() {
 
         // Insert <to> (list of csv e-mails)
         url = url.replace('<to>', emails);
+
+        // Insert <coptyto> (list of emails to cc)
+        url = url.replace('<copyto>', 'info@ilsenategop.emailnb.com');
 
         // Insert logged in account number
         url = url.replace('<accountNumber>', getLoggedInAccountNumber());

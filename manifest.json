@@ -1,8 +1,8 @@
 {
-    "name": "Batch Reply for Gmail™",
-    "description": "A chrome extension that makes it possible to reply to all selected conversations in Gmail™ at once.",
+    "name": "Batch Reply for Gmail™ With CC",
+    "description": "A chrome extension that makes it possible to reply to all selected conversations in Gmail™ at once",
     "manifest_version": 2,
-    "version": "1.2",
+    "version": "0.0.1",
     "icons": {
         "16": "assets/img/icon16.png",
         "48": "assets/img/icon48.png",
